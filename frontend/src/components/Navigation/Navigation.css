@@ -50,7 +50,7 @@ button:hover {
   color: white;
 }
 
-.profile-dropdown {
+/* .profile-dropdown {
   padding: 0;
   background: hsl(0 0% 100% / 0.1);
   color: white;
@@ -61,16 +61,16 @@ button:hover {
   height: fit-content;
   backdrop-filter: blur(1rem);
   border-radius: 15px 0 0 15px;
-}
+} */
 
-.profile-dropdown li {
+.profile-dropdown li { 
   margin: 1rem;
   font-size: 1rem;
 }
 
 #logout-button {
   box-sizing: border-box;
-  border: 1.5px solid aqua;
+  /* border: 1.5px solid aqua; */
   color: blue;
   height: 2rem;
   line-height: 0.1rem;
