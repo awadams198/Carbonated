@@ -9,7 +9,7 @@ const { requireAuth } = require("../../utils/auth");
 const router = express.Router();
 
 const validateSoda = [
-  check("soda")
+  check("name")
     .exists({ checkFalsy: true })
     .withMessage("Please provide a Soda flavor.")
     .isLength({ min: 3 })
