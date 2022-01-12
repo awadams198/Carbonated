@@ -1,0 +1,103 @@
+#navbar {
+  width: 90vw;
+  display: inline-flex;
+}
+
+#navbar a {
+  text-decoration: none;
+}
+
+#signup-button {
+  background-color: #191919;
+  color: #fff;
+  border: 1px solid #848583;
+  font-size: 14px;
+  border-radius: 20px;
+  height: 2.2rem;
+  min-width: 230px;
+  text-align: center;
+}
+
+.navlink {
+  text-decoration: none;
+  color: blue;
+  padding: 0.75rem;
+  margin: 5em 1.5em 0 0;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.navlink:hover {
+  background-color: #1f69ab;
+  color: white;
+}
+
+button {
+  text-decoration: none;
+  color: blue;
+  padding: 0.75rem;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  background-color: transparent;
+  font-size: 1rem;
+  transition: all 1s ease;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #1f69ab;
+  color: white;
+}
+
+/* .profile-dropdown {
+  padding: 0;
+  background: hsl(0 0% 100% / 0.1);
+  color: white;
+  list-style-type: none;
+  text-align: right;
+  position: absolute;
+  inset: 15% 0 0 88%;
+  height: fit-content;
+  backdrop-filter: blur(1rem);
+  border-radius: 15px 0 0 15px;
+} */
+
+.profile-dropdown li {
+  margin: 1rem;
+  font-size: 1rem;
+}
+
+#logout-button {
+  box-sizing: border-box;
+  /* border: 1.5px solid aqua; */
+  color: blue;
+  height: 2rem;
+  line-height: 0.1rem;
+  
+}
+
+#logout-button:hover {
+  background-color: rgba(200, 0, 0, 0.7);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size: 100%; */
+  /* vertical-align: baseline; */
+  background: transparent;
+  font-family: Helvetica, sans-serif;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+.sodapic {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}

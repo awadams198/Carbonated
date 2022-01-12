@@ -6,10 +6,10 @@ const helmet = require("helmet");
 const cookieParser = require("cookie-parser");
 const routes = require("./routes");
 const { ValidationError } = require("sequelize");
-
 const { environment } = require("./config");
 const isProduction = environment === "production";
-
+const indexRouter = require('./routes/api/index');
+const sodaRouter = require('./routes/api/soda')
 const app = express();
 
 app.use(morgan("dev"));
@@ -27,6 +27,8 @@ app.use(
 );
 
 app.use(routes); // Connect all the routes
+app.use('/', indexRouter);
+app.use('/soda', sodaRouter)
 
 // Catch unhandled requests and forward to error handler.
 app.use((_req, _res, next) => {
@@ -48,6 +50,7 @@ app.use(
     contentSecurityPolicy: false,
   })
 );
+
 
 // Error formatter
 app.use((err, _req, res, _next) => {
