@@ -4,6 +4,8 @@
 
 Live link: https://solo-react-project1.herokuapp.com/
 
+### Html, Css, Express, Node.js, React, Redux, Sequelize and PostgreSQL were all used in the creation of this application.
+
 ## To run this application:
 
 * npm install in backend directory.
