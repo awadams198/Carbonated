@@ -8,5 +8,5 @@ Live link: https://solo-react-project1.herokuapp.com/
 
 * npm install in backend directory
 * npm install in frontend directory
-
-then npm start in both frontend and backend
+* then npm start in both frontend and backend
+* then navigate to "http://localhost:3000".
