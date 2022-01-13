@@ -4,7 +4,7 @@
 
 Live link: https://solo-react-project1.herokuapp.com/
 
-### Html, Css, Express, Node.js, React, Redux, Sequelize and PostgreSQL were all used to create this application.
+### Html, Css, React, Redux, Node.js, Express, Sequelize and PostgreSQL were all used to create this application.
 
 ## To run this application:
 
