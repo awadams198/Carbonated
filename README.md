@@ -1,6 +1,6 @@
 # Carbonated
 
-#### Carbonated is a clone of untappd where you can post you favorite soda flavors and combinations
+#### Carbonated is a clone of untappd where you can post you favorite soda flavors and combinations.
 
 Live link: https://solo-react-project1.herokuapp.com/
 
@@ -9,4 +9,4 @@ Live link: https://solo-react-project1.herokuapp.com/
 * npm install in backend directory
 * npm install in frontend directory
 * then npm start in both frontend and backend
-* then navigate to "http://localhost:3000".
+* then navigate to http://localhost:3000.
