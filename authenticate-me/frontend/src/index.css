@@ -1,1 +1,23 @@
 /* TODO Add site wide styles */
+.soda-card {
+  display: inline-block;
+  vertical-align: top;
+  width: 84%;
+  padding: 0 72px 16px 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.soda-card-b {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  background: transparent;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}

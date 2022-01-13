@@ -18,7 +18,15 @@ function HomePage({ isLoaded }) {
 
   let sessionLinks;
   if (sessionUser) {
-    sessionLinks = <></>;
+    sessionLinks = (
+      <>
+        <img
+          className="sodapic"
+          alt="welcome-gif"
+          src="https://media.giphy.com/media/py1QeWtxdRzxK/giphy.gif"
+        />
+      </>
+    );
   } else {
     sessionLinks = (
       <>
