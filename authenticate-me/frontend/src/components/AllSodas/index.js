@@ -23,7 +23,6 @@ const AllSodas = ({ isLoaded }) => {
                 <div className="soda-card" key={`${soda?.id}`}>
                   <h4 className="soda-card-h">{soda?.name}</h4>
                   <p className="soda-card-b">{soda?.body}</p>
-                  <p>TESTING</p>
                 </div>
               </NavLink>
             ))}
