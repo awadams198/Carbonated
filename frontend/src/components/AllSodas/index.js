@@ -21,8 +21,8 @@ const AllSodas = ({ isLoaded }) => {
             sodaArray.map((soda) => (
               <NavLink className="sodas" to={`/edit/${soda?.id}`}>
                 <div className="soda-card" key={`${soda?.id}`}>
-                  <h4 className="soda-card">{soda?.name}</h4>
-                  <p className="soda-card">{soda?.body}</p>
+                  <h4 className="soda-card-h">{soda?.name}</h4>
+                  <p className="soda-card-b">{soda?.body}</p>
                 </div>
               </NavLink>
             ))}
