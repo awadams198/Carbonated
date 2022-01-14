@@ -1,3 +1,4 @@
+
 #navbar {
   width: 90vw;
   display: inline-flex;
@@ -18,7 +19,16 @@
   text-align: center;
 }
 
-.navlink {
+.navlinkh {
+  text-decoration: none;
+  color: blue;
+  padding: 0.75rem;
+  margin: 5em 1.5em 0 0;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+.navlinks {
   text-decoration: none;
   color: blue;
   padding: 0.75rem;
@@ -28,7 +38,26 @@
   transition: all 1s ease;
 }
 
-.navlink:hover {
+.navlinkm {
+  text-decoration: none;
+  color: blue;
+  padding: 0.75rem;
+  margin: 5em 1.5em 0 0;
+  border: 1px solid aqua;
+  border-radius: 5px;
+  transition: all 1s ease;
+}
+
+.navlinkh:hover {
+  background-color: #1f69ab;
+  color: white;
+}
+.navlinks:hover {
+  background-color: #1f69ab;
+  color: white;
+}
+
+.navlinkm:hover {
   background-color: #1f69ab;
   color: white;
 }
@@ -42,6 +71,7 @@ button {
   background-color: transparent;
   font-size: 1rem;
   transition: all 1s ease;
+
 }
 
 button:hover {
@@ -50,27 +80,26 @@ button:hover {
   color: white;
 }
 
-/* .profile-dropdown {
+.profile-dropdown {
   padding: 0;
   background: hsl(0 0% 100% / 0.1);
-  color: white;
+  color: black;
   list-style-type: none;
-  text-align: right;
+ 
   position: absolute;
   inset: 15% 0 0 88%;
   height: fit-content;
   backdrop-filter: blur(1rem);
   border-radius: 15px 0 0 15px;
-} */
-
+}
 .profile-dropdown li {
-  margin: 1rem;
+  margin: 100rem;
   font-size: 1rem;
 }
 
 #logout-button {
   box-sizing: border-box;
-  /* border: 1.5px solid aqua; */
+  border: 1.5px solid aqua;
   color: blue;
   height: 2rem;
   line-height: 0.1rem;
@@ -85,8 +114,7 @@ h1 {
   padding: 0;
   border: 0;
   outline: 0;
-  /* font-size: 100%; */
-  /* vertical-align: baseline; */
+  font-size: 100%;
   background: transparent;
   font-family: Helvetica, sans-serif;
   display: block;
@@ -99,4 +127,91 @@ h1 {
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.soda-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 25%;
+  margin: auto;
+  padding: 10px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+.soda-card-h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+.soda-card-b {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  margin: auto;
+  padding: 30px;
+  text-decoration: none;
+  color: blue;
+  font-weight: bold;
+  font-size: 20px;
+  position: relative;
+}
+
+.soda-card-h:before,
+.soda-card-h:after {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  border-bottom: 2px solid white;
+  transition: width 0.3s ease;
+}
+
+.soda-card-h:before {
+  bottom: 0;
+  right: 50%;
+}
+.soda-card-h:after {
+  bottom: 0;
+  left: 50%;
+}
+.soda-card-h:hover:after,
+.soda-card-h:hover:before {
+  width: 40%;
+  transition: width 0.2s ease;
+}
+
+#navbar {
+  display: flex;
+  direction: center;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+h1 {
+  transform: skew(0deg) rotate(0deg);
+  grid-area: text;
+  font-family: "Sarpanch", sans-serif;
+  font-size: 20vmin;
+  margin: 0;
+  padding: 30px;
+  color: #1d9099;
+  text-shadow: 1vmin 1vmin 0 #e79c10, -1vmin -1vmin 0 #d53a33;
 }

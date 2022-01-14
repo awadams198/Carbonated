@@ -1,0 +1,13 @@
+.navlinks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    margin: auto;
+    padding: 30px;
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+    font-size: 20px;
+    position: relative;
+  }

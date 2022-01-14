@@ -8,8 +8,10 @@ import * as sessionActions from "./store/session";
 import HomePage from "./components/HomePage";
 import Navigation from "./components/Navigation";
 import AllSodas from "./components/AllSodas";
-import CreateSodaForm from './components/CreateSodaPage'
+import CreateSodaForm from "./components/CreateSodaPage";
 import EditSodaForm from "./components/EditSodaPage";
+import AboutMe from "./components/AboutMe";
+
 function App() {
   const dispatch = useDispatch();
   const [isLoaded, setIsLoaded] = useState(false);
@@ -25,10 +27,10 @@ function App() {
           <Route path="/" exact>
             <HomePage isLoaded={isLoaded} />
           </Route>
-          <Route path='/sodas/new'>
+          <Route path="/sodas/new">
             <CreateSodaForm />
           </Route>
-          <Route path='/edit/:sodaId'>
+          <Route path="/edit/:sodaId">
             <EditSodaForm />
           </Route>
           <Route path="/login">
@@ -37,8 +39,11 @@ function App() {
           <Route path="/signup">
             <SignupFormPage />
           </Route>
-          <Route path='/sodas'>
+          <Route path="/sodas">
             <AllSodas isLoaded={isLoaded} />
+          </Route>
+          <Route path="/about">
+            <AboutMe />
           </Route>
         </Switch>
       )}
