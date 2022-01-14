@@ -19,7 +19,7 @@ const EditSodaForm = () => {
   const [body, setBody] = useState(soda?.body);
   const updateName = (e) => setName(e.target.value);
   const updateBody = (e) => setBody(e.target.value);
-  const dhandleSubmit = async (e) => {
+  const ahandleSubmit = async (e) => {
     e.preventDefault();
     dispatch(deleteSoda(sodaId));
     history.push(`/sodas`);
@@ -44,7 +44,7 @@ const EditSodaForm = () => {
           <textarea value={body} onChange={updateBody} required />
           <button type="submit">Edit</button>
           <NavLink to="/sodas">
-            <button className="options" id="del-button" onClick={dhandleSubmit}>
+            <button className="options" id="del-button" onClick={ahandleSubmit}>
               Delete
             </button>
           </NavLink>
@@ -54,7 +54,7 @@ const EditSodaForm = () => {
   } else {
     return (
       <>
-        <Redirect to="/error-user" />
+        <Redirect to="/" />
       </>
     );
   }

@@ -32,7 +32,7 @@ const AllSodas = ({ isLoaded }) => {
   } else {
     return (
       <>
-        <Redirect to="/error-user" />
+        <Redirect to="/" />
       </>
     );
   }

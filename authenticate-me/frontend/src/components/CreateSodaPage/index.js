@@ -2,7 +2,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { createSoda } from "../../store/soda";
 import { useHistory, Redirect, useParams } from "react-router-dom";
-
+import './newSoda.css'
 const CreateSodaForm = () => {
   const [name, setName] = useState("");
   const [body, setBody] = useState("");
@@ -44,7 +44,8 @@ console.log(sodaId)
             required
           />
           <textarea
-            placeholder="Start typing your soda here..."
+            className="text"
+            placeholder="Flavors..."
             value={body}
             onChange={updateBody}
             required
@@ -58,7 +59,7 @@ console.log(sodaId)
   } else {
     return (
       <>
-        <Redirect to="/error-user" />
+        <Redirect to="/" />
       </>
     );
   }
