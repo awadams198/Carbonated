@@ -1,15 +1,13 @@
 // frontend/src/components/Navigation/index.js
 import React from "react";
 import { NavLink } from "react-router-dom";
-import {  useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
 
+
 function Navigation({ isLoaded }) {
-
   const sessionUser = useSelector((state) => state.session.user);
-
-  
 
   let sessionLinks;
   if (sessionUser) {
@@ -37,7 +35,6 @@ function Navigation({ isLoaded }) {
         <NavLink to="/about" className="navlinkm">
           About Me
         </NavLink>
-        
       </>
     );
   }
@@ -47,10 +44,10 @@ function Navigation({ isLoaded }) {
       <h1>CARBONATED</h1>
       <div id="navbar">
         <ul className="navbar-links">
-            <NavLink exact to="/" className="navlinkm">
+          <NavLink exact to="/" className="navlinkm">
             Home
-            </NavLink>
-            {isLoaded && sessionLinks}
+          </NavLink>
+          {isLoaded && sessionLinks}
         </ul>
       </div>
     </>
