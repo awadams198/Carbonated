@@ -92,7 +92,7 @@ button:hover {
   backdrop-filter: blur(1rem);
   border-radius: 15px 0 0 15px;
 }
- .profile-dropdown li {
+*/ .profile-dropdown li {
   margin: 100rem;
   font-size: 1rem;
 }
