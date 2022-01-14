@@ -1,31 +1,43 @@
 // frontend/src/components/Navigation/index.js
 import React from "react";
 import { NavLink } from "react-router-dom";
-import { useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 import ProfileButton from "./ProfileButton";
 import "./Navigation.css";
 
 function Navigation({ isLoaded }) {
+
   const sessionUser = useSelector((state) => state.session.user);
+
+  
 
   let sessionLinks;
   if (sessionUser) {
     sessionLinks = (
       <>
+        <NavLink to="/sodas" className="navlinks">
+          Sodas
+        </NavLink>
+        <NavLink to="/sodas/new" className="navlinks">
+          {" "}
+          New Sodas
+        </NavLink>
         <ProfileButton user={sessionUser} />
-        <NavLink to="/sodas">Sodas</NavLink>
-        <NavLink to="/sodas/new"> New Sodas</NavLink>
       </>
     );
   } else {
     sessionLinks = (
       <>
-        <NavLink to="/login" className="navlink">
+        <NavLink to="/login" className="navlinkm">
           Log In
         </NavLink>
-        <NavLink to="/signup" className="navlink">
+        <NavLink to="/signup" className="navlinkm">
           Sign Up
         </NavLink>
+        <NavLink to="/about" className="navlinkm">
+          About Me
+        </NavLink>
+        
       </>
     );
   }
@@ -35,12 +47,10 @@ function Navigation({ isLoaded }) {
       <h1>CARBONATED</h1>
       <div id="navbar">
         <ul className="navbar-links">
-          <li>
-            <NavLink exact to="/" className="navlink">
-              Home
+            <NavLink exact to="/" className="navlinkm">
+            Home
             </NavLink>
             {isLoaded && sessionLinks}
-          </li>
         </ul>
       </div>
     </>

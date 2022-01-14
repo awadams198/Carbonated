@@ -1,20 +1,12 @@
 import React from "react";
-import { useSelector, useDispatch } from "react-redux";
-import * as sessionActions from "../../store/session";
+import { useSelector } from "react-redux";
+
 import "./HomePage.css";
 
 function HomePage({ isLoaded }) {
   const sessionUser = useSelector((state) => state.session.user);
-  const dispatch = useDispatch();
-  const login = (e) => {
-    e.preventDefault();
-    dispatch(
-      sessionActions.login({
-        credential: "Demo-lition",
-        password: "password",
-      })
-    );
-  };
+ 
+  
 
   let sessionLinks;
   if (sessionUser) {
@@ -36,9 +28,6 @@ function HomePage({ isLoaded }) {
             alt="welcome-gif"
             src="https://www.smilecolumbia.com/x/lc-content/uploads/2018/01/In-Coke-the-Fizz-Is-as-Bad-as-the-Sugar.png.webp"
           />
-          <button className="home" id="button" onClick={login}>
-            DEMO USER
-          </button>
         </div>
       </>
     );

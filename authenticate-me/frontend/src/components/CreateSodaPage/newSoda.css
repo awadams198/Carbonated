@@ -1,0 +1,14 @@
+#new-soda{
+    display:flex;
+    direction: center;
+    justify-content: center;
+    resize: none;
+    
+}
+.text{resize: none;
+    width: 600px;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	}

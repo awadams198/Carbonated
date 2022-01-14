@@ -36,7 +36,7 @@ router.post(
 
 // R for READ
 router.get(
-  "/:id(d+)",
+  '/:id(\\d+)',
   requireAuth,
   asyncHandler(async (req, res) => {
     const soda = await Soda.findByPk(req.params.id);
