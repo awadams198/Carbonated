@@ -14,7 +14,7 @@ const AboutMe = ({ isLoaded }) => {
         Linkedin
       </a>
       <p className="p-tag">
-        This website was developed by a software developer named Anthony Adams,
+        This website was made by a software developer named Anthony Adams,
         please check out my links above!
       </p>
     </>

@@ -1,6 +1,9 @@
 #navbar {
-  width: 90vw;
-  display: inline-flex;
+  /* width: 90vw;
+  display: inline-flex; */
+  display: flex;
+  direction: row;
+  justify-content: center;
 }
 
 #navbar a {
@@ -91,7 +94,6 @@ button:hover {
   border-radius: 15px 0 0 15px;
 }
 .profile-dropdown li {
-  
   font-size: 1rem;
 }
 
