@@ -45,7 +45,6 @@ function App() {
           <Route path="/about">
             <AboutMe />
           </Route>
-
         </Switch>
       )}
     </>
