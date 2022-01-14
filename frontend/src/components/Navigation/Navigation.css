@@ -1,4 +1,3 @@
-
 #navbar {
   width: 90vw;
   display: inline-flex;
@@ -71,7 +70,6 @@ button {
   background-color: transparent;
   font-size: 1rem;
   transition: all 1s ease;
-
 }
 
 button:hover {
@@ -85,7 +83,7 @@ button:hover {
   background: hsl(0 0% 100% / 0.1);
   color: black;
   list-style-type: none;
- 
+
   position: absolute;
   inset: 15% 0 0 88%;
   height: fit-content;
@@ -93,7 +91,7 @@ button:hover {
   border-radius: 15px 0 0 15px;
 }
 .profile-dropdown li {
-  margin: 100rem;
+  
   font-size: 1rem;
 }
 
