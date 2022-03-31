@@ -11,7 +11,7 @@ const CreateSodaForm = () => {
   const sessionUser = useSelector((state) => state.session.user);
   const { sodaId } = useParams();
 
-console.log(sodaId)
+// console.log(sodaId)
 
   const updateName = (e) => setName(e.target.value);
   const updateBody = (e) => setBody(e.target.value);

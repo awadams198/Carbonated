@@ -146,7 +146,7 @@ h1 {
   position: relative;
 }
 
-.soda-card-h {
+/* .soda-card-h {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -196,7 +196,7 @@ h1 {
 .soda-card-h:hover:before {
   width: 40%;
   transition: width 0.2s ease;
-}
+} */
 
 #navbar {
   display: flex;
