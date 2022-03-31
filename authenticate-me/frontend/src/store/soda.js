@@ -70,12 +70,16 @@ export const updateSoda = (data) => async (dispatch) => {
         body: JSON.stringify(data)
     });
 
+    
     if (response.ok) {
         const soda = await response.json();
         dispatch(newSODA(soda));
         return soda;
     }
 };
+
+// add delete permission feature
+
 export const deleteSoda = sodaId => async dispatch => {
     const response = await csrfFetch(`/api/sodas/${sodaId}`, { method: 'delete', });
 
