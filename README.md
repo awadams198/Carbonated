@@ -24,15 +24,15 @@ npm install
 
 5. Create a user in psql based on your .env DB_USERNAME
 
-psql -c "CREATE USER <username> PASSWORD '<password>' CREATEDB"
+```psql -c "CREATE USER <username> PASSWORD '<password>' CREATEDB"```
 
 6. Create the database, migrate, and seed
 
-npx dotenv sequelize db:create
+```npx dotenv sequelize db:create```
 
-npx dotenv sequelize db:migrate
+```npx dotenv sequelize db:migrate```
 
-npx dotenv sequelize db:seed:all
+```npx dotenv sequelize db:seed:all```
 
 7. Open up two terminals and cd into the backend and frontend directories, respectively. Start the server in each by running:
 
