@@ -10,7 +10,7 @@ Html, Css, React, Redux, Node.js, Express, Sequelize, PostgreSQL
 
 ## Getting started
 
-1. Clone this repository https://github.com/awadams198/Carbonated.git
+1. Clone this repository ```https://github.com/awadams198/Carbonated.git```
 
 git clone 
 
