@@ -2,9 +2,11 @@
 
 #### Carbonated is a clone of untappd where you can post you favorite soda flavors and combinations.
 
-Live link: https://solo-react-project1.herokuapp.com/
+## Live link
+https://solo-react-project1.herokuapp.com/
 
-### Html, Css, React, Redux, Node.js, Express, Sequelize and PostgreSQL were all used to create this application.
+## Tech stack 
+Html, Css, React, Redux, Node.js, Express, Sequelize and PostgreSQL were all used to create this application.
 
 ## Getting started
 
