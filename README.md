@@ -6,7 +6,7 @@
 https://solo-react-project1.herokuapp.com/
 
 ## Tech stack 
-Html, Css, React, Redux, Node.js, Express, Sequelize and PostgreSQL were all used to create this application.
+Html, Css, React, Redux, Node.js, Express, Sequelize, PostgreSQL
 
 ## Getting started
 
