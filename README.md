@@ -40,7 +40,7 @@ git clone
 
 ```npm start```
 
-## Screenshots
+## Screenshot
 Homepage
 ![image](https://user-images.githubusercontent.com/86488501/162500386-dfba046d-589c-4db3-945d-3cbfe58283fa.png)
 
